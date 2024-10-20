@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading | Bookshelf App</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/logo Perpus.svg">
+
+    <!-- My fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--My Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Impor script kamu di sini -->
+   <link rel="stylesheet" href="style.css">
+  
+   <!-- script -->
+   <script defer src="script.js"></script>
+
+    <!-- Lampirkan `defer` jika pemanggilan dilakukan dalam <head> -->
+  </head>
+  <body>
+    <header>
+      <h1>Perpustakaan App</h1>
+    </header>
+
+    <main>
+
+      
+      <!-- Start : Cari buku -->
+      <section>
+        <h2>Cari Buku</h2>
+        <form id="searchBook" data-testid="searchBookForm">
+          <label for="searchBookTitle">Judul Buku</label>
+          <input id="searchBookTitle" type="text" data-testid="searchBookFormTitleInput" />
+          <button id="searchSubmit" type="submit" data-testid="searchBookFormSubmitButton">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </section>
+      <!-- End : Cari buku -->
+      
+      <br>
+      <!-- Start : Tambah Buku-->
+<section>
+ <h2>Tambah Buku Baru</h2>
+ <form id="bookForm" data-testid="bookForm">
+
+   <div>
+     <label for="bookFormTitle">Judul</label>
+     <input id="bookFormTitle" type="text" required data-testid="bookFormTitleInput" />
+   </div>
+
+   <div>
+     <label for="bookFormAuthor">Penulis</label>
+     <input id="bookFormAuthor" type="text" required data-testid="bookFormAuthorInput" />
+   </div>
+
+   <div>
+     <label for="bookFormYear">Tahun</label>
+     <input id="bookFormYear" type="number" required data-testid="bookFormYearInput" />
+   </div>
+
+   <div>
+     <input
+       id="bookFormIsComplete"
+       type="checkbox"
+       data-testid="bookFormIsCompleteCheckbox"
+     />
+     <label for="bookFormIsComplete">Selesai dibaca</label>
+   </div>
+
+   <button id="bookFormSubmit" type="submit" data-testid="bookFormSubmitButton">
+     <span>&#43;</span> Tambahkan Buku
+   </button>
+ </form>
+</section>
+   <!-- End : Tambah Buku-->
+<br>
+
+      <!-- Start : Belum selesai -->
+      <section>
+        <h2>Belum selesai dibaca</h2>
+
+        <div id="incompleteBookList" data-testid="incompleteBookList">
+          <!-- 
+            Ini adalah struktur HTML untuk masing-masing buku.
+            Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
+          -->
+        </div>
+      </section>
+      <!-- End : Belum selesai -->
+<br>
+
+      <!-- start : selesai baca -->
+     <section>
+        <h2>Selesai dibaca</h2>
+
+        <div id="completeBookList" data-testid="completeBookList">
+          <!-- 
+            Ini adalah struktur HTML untuk masing-masing buku.
+            Pastikan susunan elemen beserta atribut data-testid menyesuaikan seperti contoh ini.
+          -->
+         
+        </div>
+      </section>
+    </main>
+     <!-- end : selesai baca -->
+    
+
+     <br>
+    <!-- Start : Footer -->
+<footer>
+<p><span>&#10084;</span> Build HeiSupay | Copyright 2024</p>
+</footer>
+  <!-- End : Footer -->
+
+  </body>
+</html>

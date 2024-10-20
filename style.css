@@ -1,0 +1,111 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin : 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #222;
+}
+h2{
+  font-size: 18px;
+  color: #5e5e5e;
+}
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  background: #f3f3f3;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+form {
+  margin-bottom: 24px;
+}
+
+form div {
+  margin-bottom: 24px;
+}
+
+form label {
+  display: block;
+  font-weight: normal;
+  color: #a7a7a7;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 80%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 2px solid #f1f1f1;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ffff;
+  border: none;
+  color: #222;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #222;
+  color: #f9f9f9 ;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+[data-testid="bookItem"] {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+[data-testid="bookItem"] h3, p{
+  margin-bottom: 5px;
+}
+
+
+[data-testid="bookItem"] div {
+  display: flex;
+  gap: 10px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #222 ;
+  bottom: 0;
+  width: 100%;
+}
+
+footer span{
+  color: red;
+}
+footer p{
+  font-size: 12px;
+}
