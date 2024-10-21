@@ -26,7 +26,7 @@ function addBook() {
     const title = document.getElementById('bookFormTitle').value;
     const author = document.getElementById('bookFormAuthor').value;
     const year = Number(document.getElementById('bookFormYear').value);
-
+    // const year= Number(document.getElementById('bookForm.bookFormYear').value);
 
     // const year = document.getElementById('bookFormYear').value;
     const isComplete = document.getElementById('bookFormIsComplete').checked;
